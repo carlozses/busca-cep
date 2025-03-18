@@ -7,10 +7,17 @@ export default function App() {
   const [endereco, setEndereco] = useState(
     {
       logradouro: '',
+      complemento:'',
+      unidade:'',
       localidade:'',
+      uf:'',
       bairro:'',
       estado:'',
-      regiao:''
+      regiao:'',
+      ibge:'',
+      gia:'',
+      ddd:'',
+      siafi:''
     }
   );
 
@@ -37,6 +44,13 @@ export default function App() {
       <Text>{endereco.bairro}</Text>
       <Text>{endereco.estado}</Text>
       <Text>{endereco.regiao}</Text>
+      <Text>{endereco.complemento}</Text>
+      <Text>{endereco.unidade}</Text>
+      <Text>{endereco.uf}</Text>
+      <Text>{endereco.ibge}</Text>
+      <Text>{endereco.gia}</Text>
+      <Text>{endereco.ddd}</Text>
+      <Text>{endereco.siafi}</Text>
       <StatusBar style="auto" />
 
     </View>
